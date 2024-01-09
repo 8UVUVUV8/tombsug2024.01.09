@@ -1,3 +1,5 @@
+import java.util.InputMismatchException;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,5 +24,9 @@ public class TombsugTest {
         double actual = this.tombsug.calcRadius(100,130);
         double expected = 38.3;
         Assert.assertEquals(actual, expected, 0.1);
+    }
+    @Test(expectedExceptions = InputMismatchException.class)
+    public void testCalcRadius_Zero_Side(){
+        this.tombsug.calcRadius(0, 0);
     }
 }
