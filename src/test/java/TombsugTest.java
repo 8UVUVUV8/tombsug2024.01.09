@@ -1,5 +1,7 @@
 import org.testng.annotations.Test;
 
+import com.monitor.Tombsug;
+
 public class TombsugTest {
 
     Tombsug tombsug;
