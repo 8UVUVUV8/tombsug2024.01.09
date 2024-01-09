@@ -12,6 +12,6 @@ public class TombsugTest {
     }
     @Test
     public void testCalcRadius_30_50(){
-        this.tombsug.calcRadius();
+        this.tombsug.calcRadius(30,35);
     }
 }
